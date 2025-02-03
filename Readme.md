@@ -2,7 +2,7 @@
 
 * Студент: [Юлия Архипова](https://up.htmlacademy.ru/htmlcss-individual/2/user/2606707).
 * Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
-
+* Сайт: [Мой проект] (https://github.com/giuliaarkhipova/2606707-sedona-2)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
