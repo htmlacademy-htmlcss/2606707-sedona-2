@@ -160,6 +160,9 @@ main {
   background-repeat: no-repeat;
 }
 
+.subscribe-title {
+  text-transform: uppercase;
+}
 .subscription-input {
   font-family: inherit;
   font-size: 18px;
@@ -269,10 +272,13 @@ main {
   text-transform: uppercase;
   text-decoration: none;
   color: #FFFFFF;
-background-color: #000000;
+  background-color: #000000;
 }
 
-.catalog-results-rating-rating {
+.catalog-results-list-link {
+  text-decoration: none;
+}
+.catalog-results-rating-rating, .catalog-results-button  {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -286,3 +292,4 @@ background-color: #000000;
   background-color: #FFFFFF;
 }
 
+.results-paginaition {
