@@ -51,7 +51,7 @@ body {
 
 main {
   background-color: #ffffff;
-  color: #000000;
+  color: #333333;
 
 }
 
@@ -63,8 +63,6 @@ main {
   background-color: #710505;
   color: blue;
   text-align: center;
-}
-
 }
 
 /* Не знаю что с этим селектором делать */
@@ -91,7 +89,7 @@ main {
   font-weight: 400;
   line-height: 26px;
   text-align: center;
-  color: #000000;
+  color: #333333;
   background-color: #ffffff;
 }
 
@@ -196,3 +194,95 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.main-title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 78px;
+}
+
+.breadcrumbs-list {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.breadcrumbs-item-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.catalog-filter-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.catalog-filter-list-item {
+  line-height: 23px;
+}
+
+.catalog-filter-price {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+.catalog-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.select-control {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.view-catalog-item {
+  text-decoration: none;
+}
+
+.catalog-results-list-item {
+  text-decoration: none;
+}
+
+.catalog-results-list-item-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.catalog-results-link {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+background-color: #000000;
+}
+
+.catalog-results-rating-rating {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+
+}
+
+.subscribe-inner {
+  text-align: center;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+

@@ -41,24 +41,24 @@
         </li>
       </ul>
     </nav>
-    <a class="navigation-user-link navigation-user-link--button" href="#">Хочу сюда!</a>
+    <a class="navigation-user-link navigation-user-link-button" href="#">Хочу сюда!</a>
   </header>
 
   <main class="main">
-    <h1 class="main-title">Гостиницы Седоны</h1>
-
-    <ul class="breadcrumbs-list">
-      <li class="breadcrumbs-list-item">
-        <a class="breadcrumbs-item-link" href="index.html">
-          <span class="visually-hidden">Главная</span>
-        </a>
-      </li>
-      <li class="breadcrumbs-list-item">
-        <a class="breadcrumbs-item-link" href="catalog.html" aria-current="page">Гостиницы</a>
-      </li>
-    </ul>
-
     <section class="filter">
+      <h1 class="main-title">Гостиницы Седоны</h1>
+
+      <ul class="breadcrumbs-list">
+        <li class="breadcrumbs-list-item">
+          <a class="breadcrumbs-item-link" href="index.html">
+            <span class="visually-hidden">Главная</span>
+          </a>
+        </li>
+        <li class="breadcrumbs-list-item">
+          <a class="breadcrumbs-item-link" href="catalog.html" aria-current="page">Гостиницы</a>
+        </li>
+      </ul>
+
       <h2 class="visually-hidden">
         Список гостиниц города Седоны по фильтрам
       </h2>
@@ -110,7 +110,8 @@
           <legend class="catalog-filter-title">Стоимость, ₽:</legend>
           <label class="filter-control">
             <span class="catalog-filter-text">от</span>
-            <input class="catalog-filter-price" type="number" name="price_min" placeholder="0" min="0" max="9000" value="0">
+            <input class="catalog-filter-price" type="number" name="price_min" placeholder="0" min="0" max="9000"
+              value="0">
           </label>
           <label class="filter-control">
             <span class="catalog-filter-text">до</span>
@@ -135,19 +136,19 @@
 
       <select class="select-control" aria-label="Сортировка">
         <option value="popular">Сначала дешевые</option>
-        <option value="cheap">Поаулярные</option>
+        <option value="cheap">Популярные</option>
         <option value="expensive">Сначала дорогое</option>
       </select>
 
       <ul class="view-catalog">
         <li class="view-catalog-item">
-          <a class="view-catalog-item-link-selected" href="catalog.html?view=tile">Плитка</a>
+          <a class="view-catalog-item link-selected" href="catalog.html?view=tile">Плитка</a>
         </li>
         <li class="view-catalog-item">
-          <a class="view-catalog-item-link" href="catalog.html?view=card">Карточки</a>
+          <a class="view-catalog-item link" href="catalog.html?view=card">Карточки</a>
         </li>
         <li class="view-catalog-item">
-          <a class="view-catalog-item-link" href="catalog.html?view=list">Список</a>
+          <a class="view-catalog-item link" href="catalog.html?view=list">Список</a>
         </li>
       </ul>
 
@@ -247,7 +248,7 @@
       </ul>
     </section>
 
-    <section class="subscribe">
+    <section class="subscribe-inner">
       <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
       <p class="subscribe-description">
         Только полезная информация и никакого спама, честное бойскаутское!
@@ -286,7 +287,7 @@
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <address class="contacts-address">
-        <a class="contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </address>
     </section>
 
