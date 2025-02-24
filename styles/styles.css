@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/ptsans-400.woff2")format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,23 +10,49 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/ptsans-700.woff2")format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
 body {
   font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 22px;
+  line-height: 26px;
   font-weight: 400;
   font-style: normal;
   color: #333333;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
+}
+
+header,
+main,
+footer {
+  width: 1200px;
+  margin-inline: auto;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
 }
 
 .page-header {
   color: #000000;
   background-color: #ffffff;
+}
+
+.navigation-list,
+.navigation-user-list,
+.navigation-user-link,
+.advantages-list,
+.services-list,
+.social-list,
+.breadcrumbs-list,
+.catalog-filter-list,
+.view-catalog,
+.catalog-results-list,
+.results-pagination {
+  list-style-type: none;
 }
 
 .navigation-link {
@@ -39,35 +65,42 @@ body {
   text-decoration: none;
 }
 
+.navigation-user-link {
+  text-decoration: none;
+}
+
+.navigation-user-link-count {
+  font-size: 10px;
+  line-height: 10px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #7db54f;
+  text-align: center;
+}
+
 .navigation-user-link-button {
   font-size: 16px;
   font-weight: 700;
+  line-height: 20px;
   color: #ffffff;
   background-color: #756157;
   text-align: center;
   text-transform: uppercase;
-  text-decoration: inherit;
 }
 
 main {
   background-color: #ffffff;
   color: #333333;
-
 }
 
 .hero {
-  background-image:  url(../images/hero-vector.svg), url(../images/hero-background.jpg);
+  background-image: url(../images/hero-vector.svg), url(../images/hero-background.jpg);
   background-size: 100% auto, cover;
-  background-position: left bottom, left top;
+  background-position: center bottom, center center;
   background-repeat: no-repeat;
   background-color: #710505;
-  color: blue;
+  color: rgb(75, 121, 71);
   text-align: center;
-}
-
-/* Не знаю что с этим селектором делать */
-.hero-image {
-  background-position: center;
 }
 
 .advantages-list {
@@ -84,24 +117,23 @@ main {
   background-color: #ffffff;
 }
 
-.advantages-text, .services-text, .search-description {
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 26px;
+.advantages-text,
+.services-text,
+.search-description {
   text-align: center;
   color: #333333;
   background-color: #ffffff;
 }
 
 .advantages-dark {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .advantages-light {
-  background-color: #F0F5F9;
+  background-color: #f0f5f9;
 }
 
-.advantages-middle{
+.advantages-middle {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
@@ -110,7 +142,7 @@ main {
   font-weight: 700;
   line-height: 28px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .subtitle-dark {
@@ -118,7 +150,19 @@ main {
 }
 
 .text-light {
-  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: inherit;
+  color: #ffffff;
+}
+
+.text-dark {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: inherit;
+  color: #333333;
 }
 
 .services {
@@ -126,23 +170,30 @@ main {
 }
 
 .services-item {
-  background-color: #F0F5F9;
+  background-color: #f0f5f9;
 }
 
 .services-item-title {
   font-size: 24px;
+  line-height: 28px;
   font-weight: 700;
+  text-align: center;
   text-transform: uppercase;
+  color: #000000;
 }
 
 .services-item-light {
-  background-color: #FFFFFF
+  background-color: #ffffff;
 }
 
-.button {
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 20px;
+.service-text-description {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.button-search-button {
+  font-size: 20px;
+  line-height: 36px;
   font-weight: 700;
   text-align: center;
   text-decoration: none;
@@ -161,8 +212,13 @@ main {
 }
 
 .subscribe-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: inherit;
   text-transform: uppercase;
 }
+
 .subscription-input {
   font-family: inherit;
   font-size: 18px;
@@ -170,18 +226,31 @@ main {
   font-weight: 400;
   color: #000000;
   background-color: #f2f2f2;
+  border: none;
 }
-.subscribe-button {
+
+.button-subscribe-button {
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
   background-color: #82b3d3;
+  border: none;
+
 }
 
 .page-footer {
   background-color: #ffffff;
 }
 
-.footer-contacts-address-phone {
+.contacts-address-phone {
   font-weight: 400;
   font-size: 40px;
+  font-style: normal;
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
@@ -232,6 +301,8 @@ main {
   font-weight: 700;
   color: #000000;
   background-color: #f2f2f2;
+  border: none;
+
 }
 
 .catalog-title {
@@ -239,6 +310,38 @@ main {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+}
+
+.control {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.button-apply {
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: inherit;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #82b3d3;
+  border: none;
+}
+
+.button-reset {
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: inherit;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+
 }
 
 .select-control {
@@ -265,55 +368,72 @@ main {
   text-decoration: none;
 }
 
+.catalog-results-list-item-description {
+  font-size: 18px;
+  line-height: 21px;
+}
+
 .catalog-results-link {
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #756157;
 }
 
 .catalog-results-list-link {
   text-decoration: none;
 }
-.catalog-results-rating-rating {
+
+.catalog-results-rating {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+  background-color: #f2f2f2;
 }
 
 .catalog-results-button {
   font-weight: 700;
-font-size: 16px;
-line-height: 20px;
-text-align: center;
-text-transform: uppercase;
-color: #FFFFFF;
-background-color: #82B3D3;
-
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #82b3d3;
+  border: none;
 }
+
+.button-selected {
+  background-color: #7db54f;
+}
+
 .subscribe-inner {
   text-align: center;
-  color: #000000;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
-.results-paginaition-link {
+.results-pagination-link {
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
-  background-color: #82B3D3;
+  color: #ffffff;
   text-decoration: none;
 }
 
-.results-paginaition-link aria-current {
+.results-pagination-item {
+  background-color: #82b3d3;
+}
+
+.results-pagination-link.active {
   color: #000000;
-  background-color: #f2f2f2
+}
+
+.results-pagination-item.active {
+  background-color: #f2f2f2;
 }
