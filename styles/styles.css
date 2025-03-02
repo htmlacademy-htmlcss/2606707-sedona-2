@@ -19,8 +19,10 @@ html {
 }
 
 body {
-  height: 100%;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 1.18;
@@ -28,16 +30,14 @@ body {
   font-style: normal;
   color: #333333;
   background-color: #f2f2f2;
-  display: flex;
-  flex-direction: column;
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
   width: 1200px;
   margin-inline: auto;
   flex-grow: 1;
-  display: flex;
-  flex-direction: column;
 }
 
 main {
@@ -50,16 +50,44 @@ main {
   transform: scale(0);
 }
 
-.list-unstyled {
+.page-header {
+  display: flex;
+  gap: 28px;
+  padding-inline: 70px;
+  color: #000000;
+  background-color: #ffffff;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.navigation {
+  display: flex;
+  /* align-items: start; Не понимаю, почему навигация не прибита к верху*/
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navigation-list {
+  display: flex;
+  padding: 0;
+  margin:  0;
+  margin-right: auto;
   list-style-type: none;
 }
 
-.page-header {
-  color: #000000;
-  background-color: #ffffff;
+.navigation-user-list {
+  display: flex;
+  margin-left: auto;
+  list-style-type: none;
 }
 
 .navigation-link {
+  display: block;
+  padding: 20px 16px;
   font-size: 20px;
   line-height: 1.2;
   font-weight: 700;
@@ -70,6 +98,8 @@ main {
 }
 
 .navigation-user-link {
+  display: block;
+  padding: 22px 12px;
   text-decoration: none;
 }
 
@@ -80,6 +110,7 @@ main {
   color: #ffffff;
   background-color: #7db54f;
   text-align: center;
+  margin-right: 20px;
 }
 
 .button {
@@ -118,6 +149,7 @@ main {
 }
 
 .hero {
+  padding-block: 51px 82px;
   background-image: url(../images/hero-vector.svg), url(../images/hero-background.jpg);
   background-size: 100% auto, cover;
   background-position: center bottom, center;
@@ -125,10 +157,25 @@ main {
   background-color: #0071b9;
   color: #ffffff;
   text-align: center;
+  margin-bottom: 69px;
 }
+
+.hero-image {
+  display: block;
+  width: 458px;
+  height: 352px;
+  margin: 0 auto;
+}
+
+/* .advantages {
+}
+*/
+
+
 
 .advantages-list {
   text-align: center;
+  list-style-type: none;
 }
 
 .title {
@@ -146,16 +193,15 @@ main {
   background-color: #ffffff;
 }
 
-.advantages-dark {
-  background-color: #82b3d3;
-}
-
-.advantages-light {
+.advantages-item {
   background-color: #f0f5f9;
 }
 
-.advantages-middle {
+.advantages-item:nth-child(3) {
   background-color: rgba(131, 179, 211, 0.2);
+}
+.advantages-dark {
+  background-color: #82b3d3;
 }
 
 .list-title {
@@ -187,12 +233,16 @@ main {
   text-align: center;
 }
 
-.services-item {
-  background-color: #f0f5f9;
+.services-list {
+  list-style-type: none;
 }
 
-.services-item-light {
+.services-item:nth-child(even) {
   background-color: #ffffff;
+}
+
+.services-item:nth-child(odd) {
+  background-color: #f0f5f9;
 }
 
 .subscribe {
@@ -225,9 +275,20 @@ main {
 }
 
 .page-footer {
+  display: flex;
+  padding-inline: 70px;
+  align-items: center;
   background-color: #ffffff;
 }
 
+.social-list {
+  list-style-type: none;
+}
+
+.contacts {
+  margin-left: auto;
+  margin-right: auto;
+}
 .contacts-address-phone {
   font-weight: 400;
   font-size: 40px;
@@ -306,6 +367,10 @@ main {
   background-color: #ffffff;
 }
 
+.catalog-view {
+  list-style-type: none;
+}
+
 .catalog-view-item {
   text-decoration: none;
 }
@@ -348,6 +413,10 @@ main {
 .subscribe-inner {
   text-align: center;
   background-color: #ffffff;
+}
+
+.pagination{
+  list-style-type: none;
 }
 
 .pagination-link {

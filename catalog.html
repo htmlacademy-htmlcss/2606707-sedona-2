@@ -16,7 +16,7 @@
         </a>
 
         <nav class="navigation">
-          <ul class="navigation-list list-unstyled">
+          <ul class="navigation-list">
             <li class="navigation-item">
               <a class="navigation-link" href="index.html">Главная</a>
             </li>
@@ -27,31 +27,29 @@
               <a class="navigation-link" href="catalog.html" aria-current="page">Гостиницы</a>
             </li>
           </ul>
-        </nav>
-
-        <nav class="navigation-user">
-          <ul class="navigation-user-list list-unstyled">
+          <ul class="navigation-user-list">
             <li class="navigation-item">
-              <a class="navigation-user-link" href="#" aria-label="Поиск">
+              <a class="navigation-user-link" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-user-link" href="#" aria-label="Список избранных отелей">
+              <a class="navigation-user-link" href="#">
                 <span class="visually-hidden">Список избранных отелей</span>
                 <span class="navigation-count">12</span>
               </a>
             </li>
           </ul>
+          <a class="button" href="#">Хочу сюда!</a>
         </nav>
-        <a class="button" href="#">Хочу сюда!</a>
+
       </header>
 
       <main class="main">
-        <section class="filter">
+        <div class="filter">
           <h1 class="main-title">Гостиницы Седоны</h1>
 
-          <ul class="breadcrumbs list-unstyled">
+          <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="index.html">
                 <span class="visually-hidden">Главная</span>
@@ -62,14 +60,10 @@
             </li>
           </ul>
 
-          <h2 class="visually-hidden">
-            Список гостиниц города Седоны по фильтрам
-          </h2>
-
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Инфраструктура:</legend>
-              <ul class="catalog-filter list-unstyled">
+              <ul class="catalog-filter">
                 <li class="catalog-filter-item">
                   <label class="control" for="pool">
                     <input class="control-input" type="checkbox" name="facilities" id="pool" checked>Бассейн
@@ -90,7 +84,7 @@
 
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Тип жилья:</legend>
-              <ul class="catalog-filter list-unstyled ">
+              <ul class="catalog-filter">
                 <li class="catalog-filter-item">
                   <label class="control" for="hotel">
                     <input class="control-input" type="radio" name="housing" id="hotel" value="hotel" checked>Гостиница
@@ -114,8 +108,7 @@
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
               <label class="filter-control">
                 <span class="visually-hidden">от</span>
-                <input class="filter-price" type="number" name="price_min" placeholder="0" min="0" max="9000"
-                  value="0">
+                <input class="filter-price" type="number" name="price_min" placeholder="0" min="0" max="9000" value="0">
               </label>
               <label class="filter-control">
                 <span class="visually-hidden">до</span>
@@ -133,7 +126,7 @@
               <button class="button button-reset" type="reset">Сбросить</button>
             </div>
           </form>
-        </section>
+        </div>
 
         <section class="catalog">
           <h2 class="catalog-title">Найдено гостиниц: 38</h2>
@@ -144,7 +137,7 @@
             <option value="expensive">Сначала дорогое</option>
           </select>
 
-          <ul class="catalog-view list-unstyled">
+          <ul class="catalog-view">
             <li class="catalog-view-item">
               <a class="catalog-view-item link-selected" href="catalog.html?view=tile"> <span
                   class="visually-hidden">Плитка</span></a>
@@ -154,17 +147,16 @@
                   class="visually-hidden">Карточки</span></a>
             </li>
             <li class="catalog-view-item">
-              <a class="catalog-view-item" href="catalog.html?view=list"><span
-                  class="visually-hidden">Список</span></a>
+              <a class="catalog-view-item" href="catalog.html?view=list"><span class="visually-hidden">Список</span></a>
             </li>
           </ul>
 
-          <ul class="catalog-results list-unstyled">
+          <ul class="catalog-results">
             <li class="catalog-result">
               <a class="catalog-result-image" href="#" tabindex="-1">
                 <img src="images/catalog/hotel-amara.jpg" width="300" height="212" alt="Фотография ущелья в темноте">
               </a>
-              <a class="catalog-result-link" href="#">
+              <a class="catalog-result-link" href="#" tabindex="-1">
                 <h3 class="catalog-result-title">
                   Amara Resort & Spa
                 </h3>
@@ -172,8 +164,8 @@
               <p class="hotel-type">Гостиница</p>
               <p class="hotel-price">От 4000 ₽</p>
               <a class="button" href="#">Подробнее</a>
-              <button class="button button-favorite">В избранное</button>
-              <p class="stars-four-stars">
+              <button class="button button-favorite" type="button">В избранное</button>
+              <p class="stars four-stars">
                 <span class="visually-hidden">4 звезды</span>
               </p>
               <p class="rating">Рейтинг: 8,5</p>
@@ -183,7 +175,7 @@
               <a class="catalog-result-image" href="#" tabindex="-1">
                 <img src="images/catalog/hotel-villas.jpg" width="300" height="212" alt="Фотография гор с радугой">
               </a>
-              <a class="catalog-result-link" href="#">
+              <a class="catalog-result-link" href="#" tabindex="-1">
                 <h3 class="catalog-result-title">
                   Villas at Poco Diablo
                 </h3>
@@ -191,8 +183,8 @@
               <p class="hotel-type">Гостиница</p>
               <p class="hotel-price">От 5000 ₽</p>
               <a class="button" href="#">Подробнее</a>
-              <button class="button button-favorite button-selected">В избранное</button>
-              <p class="stars-four-stars">
+              <button class="button button-favorite button-selected" type="button">В избранное</button>
+              <p class="stars four-stars">
                 <span class="visually-hidden">4 звезды</span>
               </p>
               <p class="rating">Рейтинг: 9,2</p>
@@ -202,14 +194,14 @@
               <a class="catalog-result-image" href="#" tabindex="-1">
                 <img src="images/catalog/hotel-desert.jpg" width="300" height="212" alt="Фотография гор">
               </a>
-              <a class="catalog-result-link" href="#">
+              <a class="catalog-result-link" href="#" tabindex="-1">
                 <h3 class="catalog-result-title">Desert Quail Inn</h3>
               </a>
               <p class="hotel-type">Гостиница</p>
               <p class="hotel-price">От 2500 ₽</p>
               <a class="button" href="#">Подробнее</a>
-              <button class="button button-favorite">В избранное</button>
-              <p class="stars-three-stars">
+              <button class="button button-favorite" type="button">В избранное</button>
+              <p class="stars three-stars">
                 <span class="visually-hidden">3 звезды</span>
               </p>
               <p class="rating">Рейтинг: 6,9</p>
@@ -219,21 +211,21 @@
               <a class="catalog-result-image" href="#" tabindex="-1">
                 <img src="images/catalog/hotel-greentree.jpg" width="300" height="212" alt="Фотография ночных гор">
               </a>
-              <a class="catalog-result-link" href="#">
+              <a class="catalog-result-link" href="#" tabindex="-1">
                 <h3 class="catalog-result-title">GreenTree Inn</h3>
               </a>
               <p class="hotel-type">Гостиница</p>
               <p class="hotel-price">От 1500 ₽</p>
               <a class="button" href="#">Подробнее</a>
-              <button class="button button-favorite">В избранное</button>
-              <p class="stars-two-stars">
+              <button class="button button-favorite" type="button">В избранное</button>
+              <p class="stars two-stars">
                 <span class="visually-hidden">2 звезды</span>
               </p>
               <p class="rating">Рейтинг: 5,0</p>
             </li>
           </ul>
 
-          <ul class="pagination list-unstyled">
+          <ul class="pagination">
             <li class="pagination-item active">
               <a class="pagination-link active">1</a>
             </li>
@@ -273,20 +265,20 @@
         <section class="social">
           <h2 class="visually-hidden">Ссылки на социальные сети</h2>
 
-          <ul class="social-list list-unstyled">
+          <ul class="social-list">
             <li class="social-item">
               <a class="social-link" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">Vkontakte </span>
+                <span class="visually-hidden">Страница «ВКонтакте»</span>
               </a>
             </li>
             <li class="social-item">
               <a class="social-link" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Telegram</span>
+                <span class="visually-hidden">Канал «Telegram»</span>
               </a>
             </li>
             <li class="social-item">
               <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">Youtube</span>
+                <span class="visually-hidden">Канал «YouTube»</span>
               </a>
             </li>
           </ul>
@@ -300,7 +292,7 @@
         </section>
 
         <section class="logo-developer">
-          <h2 class="visually-hidden">Логотип сайта разработчика</h2>
+          <h2 class="visually-hidden">Ссылка на разработчика сайта "HTML academy"</h2>
           <a class="logo-developer" href="https://htmlacademy.ru/">
             <img src="images/logo-developer.svg" width="115" height="33" alt="Логотип сайта разработчика">
           </a>
