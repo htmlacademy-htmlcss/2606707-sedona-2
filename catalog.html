@@ -131,27 +131,29 @@
         </div>
 
         <section class="catalog">
-          <h2 class="catalog-title">Найдено гостиниц: 38</h2>
+          <div class="catalog-header">
+            <h2 class="catalog-title">Найдено гостиниц: 38</h2>
+            <select class="select-control" aria-label="Сортировка">
+              <option value="popular">Сначала дешевые</option>
+              <option value="cheap">Популярные</option>
+              <option value="expensive">Сначала дорогое</option>
+            </select>
 
-          <select class="select-control" aria-label="Сортировка">
-            <option value="popular">Сначала дешевые</option>
-            <option value="cheap">Популярные</option>
-            <option value="expensive">Сначала дорогое</option>
-          </select>
-
-          <ul class="catalog-view">
-            <li class="catalog-view-item">
-              <a class="catalog-view-item link-selected" href="catalog.html?view=tile"> <span
-                  class="visually-hidden">Плитка</span></a>
-            </li>
-            <li class="catalog-view-item">
-              <a class="catalog-view-item" href="catalog.html?view=card"><span
-                  class="visually-hidden">Карточки</span></a>
-            </li>
-            <li class="catalog-view-item">
-              <a class="catalog-view-item" href="catalog.html?view=list"><span class="visually-hidden">Список</span></a>
-            </li>
-          </ul>
+            <ul class="catalog-view">
+              <li class="catalog-view-item">
+                <a class="catalog-view-item link-selected" href="catalog.html?view=tile"> <span
+                    class="visually-hidden">Плитка</span></a>
+              </li>
+              <li class="catalog-view-item">
+                <a class="catalog-view-item" href="catalog.html?view=card"><span
+                    class="visually-hidden">Карточки</span></a>
+              </li>
+              <li class="catalog-view-item">
+                <a class="catalog-view-item" href="catalog.html?view=list"><span
+                    class="visually-hidden">Список</span></a>
+              </li>
+            </ul>
+          </div>
 
           <ul class="catalog-results">
             <li class="catalog-result">
@@ -241,7 +243,7 @@
               <a class="pagination-link" href="#">4</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">...</a>
+              <a class="pagination-link pagination-ellipsis" href="#">...</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">10</a>
