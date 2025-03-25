@@ -254,11 +254,11 @@ img {
 }
 
 .button-action:hover,
-.button-action:focus,
+.button-action:focus-visible,
 .button-search:hover,
-.button-search:focus,
+.button-search:focus-visible,
 .button-more:hover,
-.button-more:focus {
+.button-more:focus-visible {
   background-color: #615048;
 }
 
@@ -277,11 +277,11 @@ img {
 }
 
 .button-subscribe:hover,
-.button-subscribe:focus,
+.button-subscribe:focus-visible,
 .button-apply:hover,
-.button-apply:focus,
+.button-apply:focus-visible,
 .button-favorite:hover,
-.button-favorite:focus {
+.button-favorite:focus-visible {
   background-color: #68a2ca;
 }
 
@@ -296,7 +296,7 @@ img {
 }
 
 .button-selected:hover,
-.button-selected:focus {
+.button-selected:focus-visible {
   background-color: #6c9e42;
 }
 
@@ -309,7 +309,7 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.button-reset:focus {
+.button-reset:focus-visible {
   border: 3px solid #83b3d3;
 }
 
@@ -403,15 +403,23 @@ img {
   gap: 30px;
 }
 
-.advantages-description::after {
+.advantages-description::before {
   content: "";
   width: 60px;
   height: 2px;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.advantages-description:has(.list-title-light)::before {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
 .reverse-order {
   order: 2;
+}
+
+.advantages-list-litle {
+  order: -1;
 }
 
 .list-title {
@@ -437,7 +445,6 @@ img {
   text-wrap: balance;
   color: #333333;
   margin: 0;
-  order: 1;
 }
 
 .list-text-light {
@@ -610,7 +617,7 @@ img {
 }
 
 .social-link:hover::before,
-.social-link:focus::before {
+.social-link:focus-visible::before {
   background-color: #68a2ca;
 }
 
@@ -648,7 +655,7 @@ img {
 }
 
 .contacts-address-phone:hover,
-.contacts-address-phone:focus {
+.contacts-address-phone:focus-visible {
   color: #756157;
 }
 
@@ -676,7 +683,7 @@ img {
 }
 
 .logo-developer:hover::before,
-.logo-developer:focus::before {
+.logo-developer:focus-visible::before {
   background-color: #756157;
 }
 
@@ -924,7 +931,7 @@ img {
   border-color: #68a2ca;
 }
 
-.select-control:focus {
+.select-control:focus-visible {
   outline: none;
   border-color: #68a2ca;
 }
@@ -971,7 +978,7 @@ img {
   border-color: #000000;
 }
 
-.catalog-view-button:focus {
+.catalog-view-button:focus-visible {
   border-color: #68a2ca;
 }
 
@@ -1118,7 +1125,7 @@ img {
 }
 
 .pagination-link:hover,
-.pagination-link:focus {
+.pagination-link:focus-visible {
   background-color: #68a2ca;
   outline: 1px solid #82b3d3
 }
