@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <title>Поиск гостиниц в Седоне – лучшие предложения от City of Sedona</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
 
   <body>
@@ -46,7 +48,7 @@
 
       </header>
 
-      <main class="main">
+      <main>
         <section class="hero">
           <h1 class="visually-hidden">Поиск гостиниц в городе Седоне</h1>
           <img class="hero-image" src="images/welcome.svg" width="458" height="352"
@@ -64,9 +66,9 @@
 
           <ul class="advantages-list">
             <li class="advantages-item advantages-dark">
-              <div class="advantages-description description-light">
-                <h3 class="advantages-list-litle list-title list-title-light">Настоящий городок</h3>
-                <p class="advantages-list-text list-text list-text-light">
+              <div class="advantages-description">
+                <h3 class="advantages-list-litle list-title">Настоящий городок</h3>
+                <p class="list-text">
                   Седона — не аттракцион для<br>туристов, там течёт своя жизнь
                 </p>
               </div>
@@ -76,7 +78,7 @@
             <li class="advantages-item">
               <div class="advantages-description">
                 <h3 class="advantages-list-litle list-title">Небольшая площадь</h3>
-                <p class="advantages-list-text list-text">
+                <p class="list-text">
                   Все достопримечательности находятся очень близко
                 </p>
               </div>
@@ -84,7 +86,7 @@
             <li class="advantages-item">
               <div class="advantages-description">
                 <h3 class="advantages-list-litle list-title">Красивая<br>дорога</h3>
-                <p class="advantages-list-text list-text">
+                <p class="list-text">
                   Ехать в Седону из Лас-Вегаса<br>совсем нескучно!
                 </p>
               </div>
@@ -92,15 +94,15 @@
             <li class="advantages-item">
               <div class="advantages-description">
                 <h3 class="advantages-list-litle list-title">Мало<br>туристов</h3>
-                <p class="advantages-list-text list-text">
+                <p class="list-text">
                   Большинство едет в Гранд Каньон и толпится там
                 </p>
               </div>
             </li>
-            <li class="advantages-item advantages-dark advantages-item-reversed">
-              <div class="advantages-description description-light reverse-order">
-                <h3 class="advantages-list-litle list-title list-title-light">Там есть мост дьявола</h3>
-                <p class="advantages-list-text list-text list-text-light">
+            <li class="advantages-item advantages-dark">
+              <div class="advantages-description reverse-order">
+                <h3 class="advantages-list-litle list-title">Там есть мост дьявола</h3>
+                <p class="list-text">
                   Да, по нему можно пройти!<br>Если вы осмелитесь, разумеется
                 </p>
               </div>
@@ -121,16 +123,16 @@
 
           <ul class="services-list">
             <li class="services-item services-housing">
-              <h3 class="services-list-title list-title">Жильё</h3>
-              <p class="services-list-title list-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              <h3 class="list-title">Жильё</h3>
+              <p class="list-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
             <li class="services-item services-food">
-              <h3 class="services-list-title list-title">Еда</h3>
-              <p class="services-list-title list-text">Всегда заказывайте<br>топовый фирменный бургер, вы не разочаруетесь!</p>
+              <h3 class="list-title">Еда</h3>
+              <p class="list-text">Всегда заказывайте<br>топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li class="services-item services-souvenir">
-              <h3 class="services-list-title list-title">Сувениры</h3>
-              <p class="services-list-title list-text">&nbsp;&nbsp;Не только китайского, &nbsp;но и настоящего местного<br>производства!</p>
+              <h3 class="list-title">Сувениры</h3>
+              <p class="list-text">&nbsp;&nbsp;Не только китайского, &nbsp;но и настоящего местного<br>производства!</p>
             </li>
           </ul>
         </section>
@@ -194,6 +196,77 @@
         </section>
       </footer>
     </div>
+
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-search">
+        <section class="modal-content">
+          <h2 class="title modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+
+            <div class="modal-field">
+              <label class="modal-label" for="check-in-date">Дата заезда:</label>
+              <input class="modal-input" id="check-in-date" type="text" name="check-in-date" value="27 апреля 2020"
+                placeholder="Укажите дату" required>
+              <span class="modal-error">Мы не можем отправить вас в прошлое.</span>
+            </div>
+
+            <div class="modal-field">
+              <label class="modal-label" for="check-out-date">Дата выезда:</label>
+              <input class="modal-input" id="check-out-date" type="text" name="check-out-date" value="1 сентября 2023"
+                placeholder="Укажите дату" required>
+              <span class="modal-error available">На эти даты есть свободные номера. Пока есть.</span>
+            </div>
+
+
+            <div class="modal-field modal-field-counter">
+              <label class="modal-label" for="adults">Взрослые:</label>
+
+              <div class="modal-counter">
+                <button class="counter-button counter-decrease" type="button">
+                  <span class="visually-hidden">Уменьшить</span>
+                </button>
+                <input class="modal-counter-input" id="adults" name="adults" type="number" value="2" min="1"
+                  placeholder="2" readonly>
+                <button class="counter-button counter-increase" type="button">
+                  <span class="visually-hidden">Увеличить</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="modal-field modal-field-counter">
+              <label class="modal-label" for="children">Дети:</label>
+              <span class="modal-tooltip">
+                <button class="tooltip-button" type="button" aria-label="Информация о детях"
+                  aria-describedby="tooltip-info-children">
+                  <span class="visually-hidden">Подсказка</span>
+                </button>
+                <span class="tooltip-text" role="tooltip" id="tooltip-info-children">Укажите количество детей, которые
+                  будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              </span>
+
+              <div class="modal-counter">
+                <button class="counter-button counter-decrease" type="button">
+                  <span class="visually-hidden">Уменьшить</span>
+                </button>
+                <input class="modal-counter-input" id="children" name="children" type="number" value="2" min="0"
+                  placeholder="2" readonly>
+                <button class="counter-button counter-increase" type="button">
+                  <span class="visually-hidden">Увеличить</span>
+                </button>
+              </div>
+            </div>
+
+
+            <button class="button modal-submit-button" type="submit">Найти</button>
+          </form>
+        </section>
+
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+      </div>
+    </div>
+
   </body>
 
 </html>
