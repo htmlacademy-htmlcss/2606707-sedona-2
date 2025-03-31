@@ -11,9 +11,9 @@
 
   <body>
     <div class="container">
-      <header class="page-header">
+      <header class="page-header" data-test="header">
         <a class="logo" href="index.html" aria-current="page">
-          <img src="images/logo/logo.svg" width="140" height="70" alt="Логотип City of Sedona — поиск жилья">
+          <img  class="logo-image" src="images/logo/logo.svg" width="140" height="70" alt="Логотип City of Sedona — поиск жилья">
         </a>
 
         <nav class="navigation">
@@ -48,14 +48,14 @@
 
       </header>
 
-      <main>
-        <section class="hero">
+      <main data-test="main">
+        <section class="hero" data-test="hero">
           <h1 class="visually-hidden">Поиск гостиниц в городе Седоне</h1>
           <img class="hero-image" src="images/welcome.svg" width="458" height="352"
             alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
         </section>
 
-        <section class="advantages">
+        <section class="advantages" data-test="advantages">
           <h2 class="visually-hidden">Преимущества выбора города Седона</h2>
           <p class="title">
             Седона — небольшой городок в Аризоне, заслуживающий большего!
@@ -112,7 +112,7 @@
           </ul>
         </section>
 
-        <section class="services">
+        <section class="services" data-test="service">
           <h2 class="visually-hidden">Услуги от City of Sedona</h2>
           <p class="title">
             Приезжайте в Седону отдохнуть<br>в комфорте и уюте!
@@ -137,7 +137,7 @@
           </ul>
         </section>
 
-        <section class="search">
+        <section class="search" data-test="search">
           <h2 class="title">Заинтересовались?</h2>
           <p class="section-text">
             Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие
@@ -146,7 +146,7 @@
           <a class="button button-search" href="#">Поиск гостиницы в Седоне</a>
         </section>
 
-        <section class="subscribe">
+        <section class="subscribe" data-test="subscribe">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-description">
             Только полезная информация и никакого спама,<br>честное бойскаутское!
@@ -160,7 +160,7 @@
         </section>
       </main>
 
-      <footer class="page-footer">
+      <footer class="page-footer" data-test="footer">
         <section class="social">
           <h2 class="visually-hidden">Ссылки на социальные сети</h2>
 
@@ -197,7 +197,7 @@
       </footer>
     </div>
 
-    <div class="modal-container modal-container-close">
+    <div class="modal-container modal-container-close" data-test="modal">
       <div class="modal modal-search">
         <section class="modal-content">
           <h2 class="title modal-title">Поиск гостиницы в Седоне</h2>

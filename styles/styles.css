@@ -64,6 +64,12 @@ img {
   position: relative;
 }
 
+.logo-image:hover,
+.logo-image:focus-visible,
+.logo-image:active {
+ opacity: 0.6;
+}
+
 .navigation {
   display: flex;
   flex-wrap: wrap;
@@ -91,6 +97,10 @@ img {
   color: inherit;
   text-align: center;
   text-decoration: none;
+}
+
+.navigation-link {
+  outline-offset: -1px;
 }
 
 .navigation-link[aria-current="page"]::after,
@@ -129,6 +139,17 @@ img {
   padding: 2px;
 }
 
+.navigation-user-link:hover,
+.navigation-user-link:active {
+  opacity: 0.6;
+}
+
+.icon-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .icon-search::before {
   content: "";
   width: 20px;
@@ -137,12 +158,6 @@ img {
   background-size: 18px 18px;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.icon-search {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .icon-favorite {
@@ -819,28 +834,6 @@ img {
   list-style-type: none;
 }
 
-
-.catalog {
-  padding: 50px 70px 60px 70px;
-}
-
-.catalog-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 70px;
-  margin-bottom: 40px;
-}
-
-.catalog-title {
-  margin: 0;
-  margin-right: 110px;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 1.2;
-  text-transform: uppercase;
-}
-
 .control {
   display: flex;
   gap: 16px;
@@ -1011,10 +1004,32 @@ img {
   gap: 32px;
 }
 
+.catalog {
+  padding: 50px 70px 60px 70px;
+}
+
+.catalog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 70px;
+  margin-bottom: 40px;
+}
+
+.catalog-title {
+  margin: 0;
+  margin-right: 110px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
 .select-control {
   display: flex;
   min-width: 292px;
   padding: 12px 20px;
+  margin-left: 18px;
   font-family: inherit;
   font-size: 18px;
   line-height: 1.17;
@@ -1376,8 +1391,8 @@ pointer-events: none;
   background-color: #f2f2f2;
   border: none;
   cursor: pointer;
-  /* outline-offset: -1px; */
-  /* flex-shrink: 0; */
+  outline-offset: -1px;
+  flex-shrink: 0;
 }
 
 .counter-button::before {
