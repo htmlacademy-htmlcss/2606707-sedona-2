@@ -53,7 +53,6 @@ body {
 }
 
 img {
-  display: block;
   max-width: 100%;
   height: auto;
   object-fit: contain;
@@ -1147,6 +1146,10 @@ img {
 .catalog-result-image {
   grid-column: 1 / -1;
   text-decoration: none;
+}
+
+.result-image {
+  display: block;
 }
 
 .catalog-result-link {
